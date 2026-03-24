@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book & Contact | Flory's Nail Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Flory's Nail Hub</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="wrap">
+      <h1>Book an Appointment</h1>
+      <p>Fill in the form below and Flory will confirm your booking within 24 hours. A 50% deposit is required to secure your slot.</p>
+    </div>
+  </section>
+
+  <!-- Booking form + info -->
+  <section>
+    <div class="wrap">
+      <div class="two-col">
+
+        <!-- Form -->
+        <div>
+          <h2>Booking form</h2>
+          <form>
+            <label for="service">Service</label>
+            <select id="service">
+              <option value="">Select a service...</option>
+              <optgroup label="Manicure">
+                <option>Classic Manicure — R 120</option>
+                <option>Gel Manicure — R 220</option>
+                <option>Builder Gel Manicure — R 280</option>
+                <option>Russian Manicure — R 350</option>
+                <option>Gel Removal — R 80</option>
+              </optgroup>
+              <optgroup label="Acrylics & Extensions">
+                <option>Acrylic Full Set — R 380</option>
+                <option>Acrylic Infill — R 250</option>
+                <option>Hard Gel Full Set — R 420</option>
+                <option>Hard Gel Infill — R 280</option>
+              </optgroup>
+              <optgroup label="Pedicure">
+                <option>Classic Pedicure — R 180</option>
+                <option>Gel Pedicure — R 280</option>
+                <option>Luxury Pedicure — R 380</option>
+              </optgroup>
+              <optgroup label="Nail Art">
+                <option>Nail Art (custom quote)</option>
+              </optgroup>
+            </select>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your full name" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Your Number" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="For confirmation" />
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" required />
+
+            <label for="time">Preferred Time</label>
+            <select id="time">
+              <option value="">Select a time...</option>
+              <option>08:00</option>
+              <option>09:00</option>
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+            </select>
+
+            <label for="notes">Notes or design ideas</label>
+            <textarea id="notes" placeholder="Describe your ideal set or ask a question..."></textarea>
+
+            <br />
+            <button type="button" class="btn" onclick="this.textContent='Request sent'; this.disabled=true;">
+              Request Appointment
+            </button>
+            <p style="margin-top:0.6rem; font-size:0.8rem;">We will confirm availability and send payment details within 24 hours.</p>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h2>Studio details</h2>
+
+          <h3 style="margin-top: 1.5rem;">Hours</h3>
+          <table>
+            <tr><td>Monday – Friday</td><td style="text-align:right; color:#3a2e2b;">08:00 – 18:00</td></tr>
+            <tr><td>Saturday</td><td style="text-align:right; color:#3a2e2b;">08:00 – 16:00</td></tr>
+            <tr><td>Sunday</td><td style="text-align:right; color:#3a2e2b;">By arrangement</td></tr>
+            <tr><td>Public Holidays</td><td style="text-align:right; color:#9a8078;">Closed</td></tr>
+          </table>
+
+          <h3 style="margin-top: 1.5rem;">Contact</h3>
+          <ul>
+            <li><a href="tel:+266 62750743">+266 62750743</a> (Phone & WhatsApp)</li>
+            <li><a href="mailto:hello@florysnailhub.com">hello@florysnailhub.com</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">@florysnailhub on Instagram</a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener">@florysnailhub on TikTok</a></li>
+          </ul>
+
+          <h3 style="margin-top: 1.5rem;">Location</h3>
+          <p>Near Annabelle Pre-School<br />Moshoeshoe 2<br />2196, Lesotho</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener">Open in Google Maps</a>
+
+          <div class="img-ph" style="margin-top:1rem;">Map image</div>
+
+          <h3 style="margin-top: 1.5rem;">Booking policy</h3>
+          <ul>
+            <li>50% deposit required to confirm bookings.</li>
+            <li>Cancellations under 24 hours forfeit the deposit.</li>
+            <li>Please arrive with clean, polish-free nails.</li>
+            <li>Late arrivals over 15 minutes may need to reschedule.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>Flory's Nail Hub</h4>
+        <p>Professional nail care in a calm, welcoming space.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+266 62750743">+266 62750743</a></li>
+          <li><a href="mailto:hello@florysnailhub.com">hello@florysnailhub.com</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">© 2025 Flory's Nail Hub. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
